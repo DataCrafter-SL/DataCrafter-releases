@@ -8,7 +8,9 @@ The source code is maintained in a private repository. This repo exists solely t
 
 Browse the [Releases](https://github.com/nick2468/DataCrafter-releases/releases) page. Each release includes:
 
-- `datacrafter-server-X.Y.Z.zip` - Server bundle. Contains the fat JAR (with bundled Vaadin frontend), launch scripts (`start.bat`, `start.sh`, `stop.bat`, `stop.sh`), schema and license tools, and a default `datacrafter.properties`. Run `start.bat` (Windows) or `start.sh` (Linux/macOS) after extracting.
+- `datacrafter-server-X.Y.Z.zip` - Server bundle. Contains the fat JAR (with bundled Vaadin frontend), launch scripts (`start.bat`, `start.sh`, `stop.bat`, `stop.sh`), schema and password tools, and a default `datacrafter.properties`. Run `start.bat` (Windows) or `start.sh` (Linux/macOS) after extracting.
+
+To activate the server you also need a `DataCrafter.key` license file, which is issued by the vendor on request. Drop the file next to `datacrafter-server.jar` before first start.
 - `datacrafter-client-X.Y.Z.zip` - Desktop client bundle. Contains the desktop client fat JAR and launch scripts. Connects to a running DataCrafter server.
 
 ## Requirements
