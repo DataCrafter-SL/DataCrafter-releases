@@ -1,0 +1,5 @@
+# Exclude every file from `git archive`. GitHub auto-generates
+# "Source code (zip)" / "Source code (tar.gz)" links on every tagged
+# Release and uses git-archive under the hood. There is no UI / API
+# way to remove those links, but `export-ignore` makes them empty.
+* export-ignore
