@@ -1,6 +1,6 @@
 # DataCrafter Releases
 
-This repository hosts public release downloads for **DataCrafter**, a self-hosted data engineering platform (Java 21 / Spring Boot / Vaadin).
+This repository hosts public release downloads for **DataCrafter**, a self-hosted data engineering platform (Java 25 / Spring Boot 4).
 
 The source code is maintained in a private repository. This repo exists solely to make built artifacts available for download.
 
