@@ -15,8 +15,8 @@ To activate the server you also need a `DataCrafter.key` license file, which is 
 
 ## Requirements
 
-- **Runtime:** JDK 21 (any distribution).
-- **Database:** Embedded H2 (default - no setup) or Oracle (optional).
+- **Runtime:** JDK 25 (any distribution).
+- **Database:** Embedded H2 (default - no setup) or Postgres or Oracle.
 - **OS:** Windows, Linux, or macOS.
 
 ## Documentation
