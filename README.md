@@ -6,12 +6,13 @@ The source code is maintained in a private repository. This repo exists solely t
 
 ## Downloads
 
-Browse the [Releases](https://github.com/nick2468/DataCrafter-releases/releases) page. Each release includes:
+Browse the [Releases](https://github.com/DataCrafter-SL/DataCrafter-releases/releases) page. Each release includes:
 
-- `datacrafter-server-X.Y.Z.zip` - Server bundle. Contains the fat JAR (with bundled Vaadin frontend), launch scripts (`start.bat`, `start.sh`, `stop.bat`, `stop.sh`), schema and password tools, and a default `datacrafter.properties`. Run `start.bat` (Windows) or `start.sh` (Linux/macOS) after extracting.
+- `datacrafter-server-X.Y.Z.zip` - Server bundle. Contains the server JAR, the web client and the Excel add-in it serves, launch scripts (`bin/run.bat`, `bin/run.sh`, `bin/stop.bat`, `bin/stop.sh`), schema, password, backup and update tools, and a default `DataCrafter.properties`. Run `bin\run.bat` (Windows) or `bin/run.sh` (Linux/macOS) after extracting, then read `QUICKSTART.md`.
 
-To activate the server you also need a `DataCrafter.key` license file, which is issued by the vendor on request. Drop the file next to `datacrafter-server.jar` before first start.
-- `datacrafter-client-X.Y.Z.zip` - Desktop client bundle. Contains the desktop client fat JAR and launch scripts. Connects to a running DataCrafter server.
+  The zip includes a 30-day trial `DataCrafter.key`, so the server starts straight away. For a full licence key, contact the vendor, and replace the trial `DataCrafter.key` beside `datacrafter-server.jar` with it.
+
+- `datacrafter-client-X.Y.Z.zip` - Desktop client bundle. Contains the desktop client JAR and launch scripts (`run.bat`, `run.sh`). Connects to a running DataCrafter server.
 
 ## Requirements
 
@@ -21,8 +22,8 @@ To activate the server you also need a `DataCrafter.key` license file, which is 
 
 ## Documentation
 
-User-facing documentation lives alongside each release. For the changelog and high-level docs, see the release notes on the [Releases](https://github.com/nick2468/DataCrafter-releases/releases) page.
+User-facing documentation lives alongside each release. For the changelog and high-level docs, see the release notes on the [Releases](https://github.com/DataCrafter-SL/DataCrafter-releases/releases) page.
 
 ## Reporting Issues
 
-Open an issue on this repository. Please include the version (`X.Y.Z`), OS, JDK version, and a snippet from `logs/datacrafter_server.log` if relevant.
+Open an issue on this repository. Please include the version (`X.Y.Z`), OS, JDK version, and a snippet from `logs/datacrafter-server.log` if relevant.
