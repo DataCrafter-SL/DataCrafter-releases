@@ -14,9 +14,30 @@ Browse the [Releases](https://github.com/DataCrafter-SL/DataCrafter-releases/rel
 
 - `datacrafter-client-X.Y.Z.zip` - Desktop client bundle. Contains the desktop client JAR and launch scripts (`run.bat`, `run.sh`). Connects to a running DataCrafter server.
 
+## Container image
+
+The server also comes as a container image, for Linux on amd64 and arm64, with its own Java.
+Anyone can pull it, with no account:
+
+```bash
+docker pull ghcr.io/datacrafter-sl/datacrafter:latest
+docker run -d --name datacrafter -p 127.0.0.1:8080:8080 -v datacrafter-data:/data --memory 2g --stop-timeout 45 ghcr.io/datacrafter-sl/datacrafter:latest
+```
+
+Then open http://localhost:8080 and sign in as `trial` / `trial`.
+
+`latest` names the newest release. Each release also has its own tag, `X.Y.Z`; use that in a
+command you keep. The registry keeps the three newest releases; for an older one, use its zip.
+
+The image runs the same 30-day trial key as the zip, H2 only, under the terms in
+`LICENSE-TRIAL.txt` (in the container at `/data/LICENSE-TRIAL.txt`). Its
+`/data/THIRD-PARTY-NOTICES-IMAGE.txt` lists the Java runtime and Linux packages it holds. The
+server zip's `README.md`, section "Running it in a container", covers upgrades, backups and
+everything else. An image with the Standard key comes with the first free release.
+
 ## Requirements
 
-- **Runtime:** JDK 25 (any distribution).
+- **Runtime:** JDK 25 (any distribution) (not needed for the container image).
 - **Database:** Embedded H2 (default - no setup) or Postgres or Oracle.
 - **OS:** Windows, Linux, or macOS.
 
